@@ -47,11 +47,25 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
-                <&kp LG(SPACE) &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-                <&macro_wait_time 10>,
-                <&kp LG(SPACE)>;
+                <&to_en &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_wait_time 5>,
+                <&to_ru>;
 
             label = "TOGGLE_EN";
+        };
+
+        to_en: to_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE)>;
+            label = "TO_EN";
+        };
+
+        to_ru: to_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE)>;
+            label = "TO_RU";
         };
     };
 
@@ -115,7 +129,7 @@
 &trans            &trans       &trans       &trans     &trans      &trans                         &trans  &kp LBKT       &trans  &kp RBKT          &trans  &trans
 &trans            &trans       &trans       &trans     &trans      &trans                         &trans  &kp LBRC       &trans  &kp RBRC          &trans  &trans
 &trans            &trans       &trans       &trans     &trans      &trans       &trans    &trans  &trans  &kp LESS_THAN  &trans  &kp GREATER_THAN  &trans  &trans
-                               &trans       &trans     &trans      &mo 5        &trans    &trans  &trans  &trans         &trans  &trans
+                               &trans       &trans     &trans      &mo 5        &to_en    &trans  &trans  &trans         &trans  &trans
             >;
         };
 
@@ -125,7 +139,7 @@
 &trans     &trans       &trans       &trans     &trans      &trans                         &trans  &kp LBKT       &trans  &kp RBKT          &trans  &trans
 &trans     &trans       &trans       &trans     &trans      &trans                         &trans  &kp LBRC       &trans  &kp RBRC          &trans  &trans
 &trans     &trans       &trans       &trans     &trans      &trans       &trans    &trans  &trans  &kp LESS_THAN  &trans  &kp GREATER_THAN  &trans  &trans
-                        &trans       &trans     &trans      &mo 5        &trans    &trans  &trans  &trans         &trans  &trans
+                        &trans       &trans     &trans      &mo 5        &to_ru    &trans  &trans  &trans         &trans  &trans
             >;
 
             display-name = "SYM_EN";
