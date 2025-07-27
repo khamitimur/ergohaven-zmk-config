@@ -125,11 +125,11 @@
         SYM_RU {
             display-name = "SYM_RU";
             bindings = <
-&toggle_en GRAVE  &kp LS(N1)  &toggle_en LS(N2)  &toggle_en LS(N3)  &kp LS(N4)  &kp LS(N5)                    &toggle_en LS(N6)  &kp LS(N7)     &kp LS(N8)  &kp LS(N9)        &kp LS(N0)  &kp DELETE
-&trans            &trans      &trans             &trans             &trans      &trans                        &trans             &kp LBKT       &trans      &kp RBKT          &kp MINUS   &kp EQUAL
-&trans            &trans      &trans             &trans             &trans      &trans                        &trans             &kp LBRC       &trans      &kp RBRC          &trans      &trans
-&trans            &trans      &trans             &trans             &trans      &trans      &trans    &trans  &trans             &kp LESS_THAN  &trans      &kp GREATER_THAN  &trans      &trans
-                              &trans             &trans             &trans      &mo 5       &to 4     &trans  &trans             &trans         &trans      &trans
+&toggle_en GRAVE  &kp LS(N1)  &toggle_en LS(N2)  &toggle_en LS(N3)  &kp LS(N4)  &kp LS(N5)                    &toggle_en LS(N6)  &kp LS(N7)               &kp LS(N8)  &kp LS(N9)           &kp LS(N0)  &kp DELETE
+&trans            &trans      &trans             &trans             &trans      &trans                        &trans             &toggle_en LEFT_BRACKET  &trans      &toggle_en RBKT      &kp MINUS   &kp EQUAL
+&trans            &trans      &trans             &trans             &trans      &trans                        &trans             &toggle_en LS(LBKT)      &trans      &toggle_en LS(RBKT)  &trans      &trans
+&trans            &trans      &trans             &trans             &trans      &trans      &trans    &trans  &trans             &toggle_en LS(COMMA)     &trans      &toggle_en LS(DOT)   &trans      &trans
+                              &trans             &trans             &trans      &mo 5       &trans    &trans  &trans             &trans                   &trans      &trans
             >;
         };
 
@@ -139,7 +139,7 @@
 &trans     &trans      &trans      &trans      &trans      &trans                        &trans      &kp LBKT       &trans      &kp RBKT          &kp MINUS   &kp EQUAL
 &trans     &trans      &trans      &trans      &trans      &trans                        &trans      &kp LBRC       &trans      &kp RBRC          &trans      &trans
 &trans     &trans      &trans      &trans      &trans      &trans      &trans    &trans  &trans      &kp LESS_THAN  &trans      &kp GREATER_THAN  &trans      &trans
-                       &trans      &trans      &trans      &mo 5       &to 3     &trans  &trans      &trans         &trans      &trans
+                       &trans      &trans      &trans      &mo 5       &trans    &trans  &trans      &trans         &trans      &trans
             >;
 
             display-name = "SYM_EN";
