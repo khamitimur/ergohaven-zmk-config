@@ -125,21 +125,21 @@
         SYM_RU {
             display-name = "SYM_RU";
             bindings = <
-&toggle_en GRAVE  &kp RU_EXCL  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT                    &trans  &trans         &trans  &trans            &trans  &trans
-&trans            &trans       &trans       &trans     &trans      &trans                         &trans  &kp LBKT       &trans  &kp RBKT          &trans  &trans
-&trans            &trans       &trans       &trans     &trans      &trans                         &trans  &kp LBRC       &trans  &kp RBRC          &trans  &trans
-&trans            &trans       &trans       &trans     &trans      &trans       &trans    &trans  &trans  &kp LESS_THAN  &trans  &kp GREATER_THAN  &trans  &trans
-                               &trans       &trans     &trans      &mo 5        &to_en    &trans  &trans  &trans         &trans  &trans
+&toggle_en GRAVE  &kp LS(N1)  &toggle_en LS(N2)  &toggle_en LS(N3)  &kp LS(N4)  &kp LS(N5)                    &toggle_en LS(N6)  &kp LS(N7)     &kp LS(N8)  &kp LS(N9)        &kp LS(N0)  &kp DELETE
+&trans            &trans      &trans             &trans             &trans      &trans                        &trans             &kp LBKT       &trans      &kp RBKT          &trans      &trans
+&trans            &trans      &trans             &trans             &trans      &trans                        &trans             &kp LBRC       &trans      &kp RBRC          &trans      &trans
+&trans            &trans      &trans             &trans             &trans      &trans      &trans    &trans  &trans             &kp LESS_THAN  &trans      &kp GREATER_THAN  &trans      &trans
+                              &trans             &trans             &trans      &mo 5       &to_en    &trans  &trans             &trans         &trans      &trans
             >;
         };
 
         SYM_EN {
             bindings = <
-&kp GRAVE  &kp RU_EXCL  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT                    &trans  &trans         &trans  &trans            &trans  &trans
-&trans     &trans       &trans       &trans     &trans      &trans                         &trans  &kp LBKT       &trans  &kp RBKT          &trans  &trans
-&trans     &trans       &trans       &trans     &trans      &trans                         &trans  &kp LBRC       &trans  &kp RBRC          &trans  &trans
-&trans     &trans       &trans       &trans     &trans      &trans       &trans    &trans  &trans  &kp LESS_THAN  &trans  &kp GREATER_THAN  &trans  &trans
-                        &trans       &trans     &trans      &mo 5        &to_ru    &trans  &trans  &trans         &trans  &trans
+&kp GRAVE  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                    &kp LS(N6)  &kp LS(N7)     &kp LS(N8)  &kp LS(N9)        &kp LS(N0)  &kp DELETE
+&trans     &trans      &trans      &trans      &trans      &trans                        &trans      &kp LBKT       &trans      &kp RBKT          &trans      &trans
+&trans     &trans      &trans      &trans      &trans      &trans                        &trans      &kp LBRC       &trans      &kp RBRC          &trans      &trans
+&trans     &trans      &trans      &trans      &trans      &trans      &trans    &trans  &trans      &kp LESS_THAN  &trans      &kp GREATER_THAN  &trans      &trans
+                       &trans      &trans      &trans      &mo 5       &to_ru    &trans  &trans      &trans         &trans      &trans
             >;
 
             display-name = "SYM_EN";
